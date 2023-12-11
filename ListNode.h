@@ -1,11 +1,17 @@
-#include <string>
+#pragma once
+#include <iostream>
+#include <set>
 using namespace std;
 
-struct ListNode{
-  string title;
-  ListNode* next;
+class ListNode
+{
+public:
+	ListNode();
+	ListNode* next;
+private:
+	string title;
+	set<string> genre;
+	string description;
 
-  ListNode();
-  ListNode(string title);
-  ListNode(string title, ListNode*next);
 };
+
