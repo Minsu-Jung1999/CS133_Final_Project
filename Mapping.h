@@ -15,6 +15,7 @@ private:
 
 public:
   Mapping();
+  map<string, set<string>> getMap();
   
   void readFromFile(string filename); 
 };

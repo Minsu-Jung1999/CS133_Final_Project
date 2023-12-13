@@ -10,6 +10,11 @@ Mapping::Mapping() {
   // initialize map to empty
 }
 
+//return the current map
+map<string, set<string>> Mapping::getMap(){
+  return movies;
+}
+
 void Mapping::readFromFile(string filename) {
   string line;
   ifstream file;

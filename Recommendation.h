@@ -3,14 +3,15 @@
 
 #include "ListNode.h"
 #include <string>
+#include <map>
 
 class Recommendation {
 private:
   ListNode *root;
 
 public:
-  Recommendation(string input);
-  string toString();
+  Recommendation(map<string, set<string>> map);
+  string toString(string input);
 };
 
 #endif
