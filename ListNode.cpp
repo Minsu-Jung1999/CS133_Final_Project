@@ -1,6 +1,8 @@
 #include "ListNode.h"
 
-ListNode::ListNode()
-{
-
+ListNode::ListNode(){
+  title = "";
+  next = nullptr;
+  genre = {""};
+  description = "";
 }

@@ -1,4 +1,8 @@
 #include "GUI.h"
+#include "Mapping.h"
+#include "Recommendation.h"
+#include <map>
+
 
 GUI::GUI()
 {
@@ -50,5 +54,16 @@ void GUI::start()
 
 void GUI::restult()
 {
-    // print out the result for the user from Recommendation.toString() [Natali will implement this function and class]
+  // print out the result for the user from Recommendation.toString() 
+  string input;
+  cout << "Which genre do you want to watch? ";
+  cin >> input;
+  
+  Mapping mapp;
+  map<string, set<string>> movieMap;
+  movieMap = mapp.getMap();
+  Recommendation rec(movieMap);
+
+  cout << rec.toString(input);
+
 }

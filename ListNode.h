@@ -6,12 +6,11 @@ using namespace std;
 class ListNode
 {
 public:
-	ListNode();
-	ListNode* next;
+  ListNode();
+  ListNode* next;
+  string title;
+  set<string> genre;
+  string description;
 private:
-	string title;
-	set<string> genre;
-	string description;
 
 };
-
